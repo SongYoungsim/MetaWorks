@@ -1,0 +1,36 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  // dev 환경. 운영(prod)은 오픈 단계에서 env.production 으로 분리한다.
+  "name": "metawork-dev",
+  "compatibility_date": "2026-10-10",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "./worker/index.ts",
+  "assets": {
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "observability": { "enabled": true },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "metawork-dev",
+      "database_id": "15fc2c72-49dd-4e54-8097-74a3b507b497",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "FILES",
+      "bucket_name": "metawork-dev-files"
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  },
+  "vars": {
+    "APP_ENV": "dev"
+  },
+  "triggers": {
+    "crons": ["0 * * * *"]
+  }
+}

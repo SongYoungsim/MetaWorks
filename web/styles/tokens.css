@@ -1,0 +1,86 @@
+/* ==========================================================================
+   업무트래커 디자인 토큰 (기획서 2.2 · shadcn/ui zinc 스타일)
+   ========================================================================== */
+:root {
+  /* zinc */
+  --zinc-50: #fafafa;
+  --zinc-100: #f4f4f5;
+  --zinc-200: #e4e4e7;
+  --zinc-300: #d4d4d8;
+  --zinc-400: #a1a1aa;
+  --zinc-500: #71717a;
+  --zinc-600: #52525b;
+  --zinc-700: #3f3f46;
+  --zinc-800: #27272a;
+  --zinc-900: #18181b;
+  --zinc-950: #09090b;
+
+  /* 의미 색 */
+  --background: #ffffff;
+  --foreground: var(--zinc-950);
+  --muted: var(--zinc-100);
+  --muted-foreground: var(--zinc-500);
+  --border: var(--zinc-200);
+  --input: var(--zinc-200);
+  --ring: var(--zinc-950);
+  --primary: var(--zinc-900);
+  --primary-foreground: #ffffff;
+  --sidebar-bg: #09090b;
+  --sidebar-fg: var(--zinc-400);
+  --sidebar-active-bg: var(--zinc-800);
+  --sidebar-active-fg: #ffffff;
+  --sidebar-border: var(--zinc-800);
+
+  /* 상태색 (완료 · 진행 · 보류 · 오류) */
+  --success: #059669;
+  --success-bg: #ecfdf5;
+  --success-border: #a7f3d0;
+  --info: #2563eb;
+  --info-bg: #eff6ff;
+  --info-border: #bfdbfe;
+  --warning: #d97706;
+  --warning-bg: #fffbeb;
+  --warning-border: #fde68a;
+  --danger: #dc2626;
+  --danger-bg: #fef2f2;
+  --danger-border: #fecaca;
+
+  /* 본문 글씨색 3종 */
+  --text-black: var(--zinc-950);
+  --text-red: #dc2626;
+  --text-blue: #2563eb;
+
+  /* 모양 */
+  --radius-sm: 6px;
+  --radius: 8px;
+  --radius-lg: 10px;
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
+  --shadow: 0 1px 3px rgb(0 0 0 / 0.08), 0 1px 2px rgb(0 0 0 / 0.04);
+  --shadow-lg: 0 10px 30px -10px rgb(0 0 0 / 0.25), 0 4px 10px -4px rgb(0 0 0 / 0.1);
+
+  /* 레이아웃 */
+  --sidebar-width: 248px;
+  --sidebar-collapsed-width: 64px;
+  --topbar-height: 56px;
+  --touch-target: 44px;
+
+  /* 글꼴: 영문·숫자 Geist, 한글 Noto Sans KR */
+  --font-sans: "Geist", "Noto Sans KR", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Typography scale: no visible text may be smaller than 11px. */
+  --text-min: 11px;
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-base: 15px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-title: 22px;
+  --text-title-lg: 24px;
+  --text-page: 28px;
+  --text-display: 32px;
+  --text-hero: 36px;
+
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --duration: 160ms;
+}
